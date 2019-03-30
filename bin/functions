@@ -1,10 +1,10 @@
 Update() {
     sudo apt update
-    sudo apt upgrade
+    sudo apt upgrade -y
 }
 
 Install() {
-    sudo apt-get install $1
+    sudo apt-get install $1 -y --force-yes
     sudo apt autoremove
 }
 
@@ -26,6 +26,7 @@ PopCorn() {
     sudo tar Jxf popcorntime.tar.xz -C /opt/popcorntime/
     sudo ln -sf /opt/popcorntime/Popcorn-Time /usr/bin/Popcorn-Time
     echo -e '[Desktop Entry]\n Version=1.0\n Name=popcorntime\n Exec=/opt/popcorntime/Popcorn-Time\n Icon=/opt/popcorntime/src/app/images/icon.png\n Type=Application\n Categories=Application' | sudo tee /usr/share/applications/popcorntime.desktop
+    rm -rf popcorntime.tar.xz
 }
 
 Chrome() {
@@ -35,9 +36,10 @@ Chrome() {
 
 Slack() {
     Message "Instalação Slack"
-    wget -P $HOME/Downloads https://downloads.slack-edge.com/linux_releases/slack-desktop-3.3.8-amd64.deb
-    cd $HOME/Downloads
+    wget $HOME/Downloads https://downloads.slack-edge.com/linux_releases/slack-desktop-3.3.8-amd64.deb -O slack-desktop.deb
     sudo dpkg -i slack-desktop-3.3.8-amd64.deb
+    apt --fix-broken install
+    rm -rf slack-desktop.deb
 }
 
 Teamviewer() {
@@ -62,7 +64,7 @@ Yarn() {
 }
 
 SystemFiles() {
-    mkdir -v $HOME/.config/terminator $HOME/.config/Popcorn-Time/Default/ $HOME/.config/Code/User/
+    mkdir -pv $HOME/.config/terminator $HOME/.config/Popcorn-Time/Default/ $HOME/.config/Code/User/
     cp -v bin/system-config/.bashrc bin/system-config/.gitconfig $HOME
     cp -Rv bin/system-config/popcorn/data $HOME/.config/Popcorn-Time/Default/
     cp -Rv bin/system-config/vscode/User $HOME/.config/Code/User/
