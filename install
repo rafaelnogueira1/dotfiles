@@ -2,32 +2,29 @@
 
 . bin/loadall
 
-## Adicionando PPAs
-
+# Adicionando PPAs
 Message "Adicionando PPAs"
-
+Install "wget curl"
 . bin/system-config/repositories
 
 Message "Atualizando sistema"
 
-Update
-
+#Update
 Message "Instalando pacotes essenciais"
 
-Install "spotify-client vlc steam google-chrome-stable slack-desktop ubuntu-restricted-extras libdvd-pkg dpkg-reconfigure libdvd-pkg"
-InstallPopCorn
+Install "vlc steam transmission build-essential ubuntu-restricted-extras libdvd-pkg libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext p7zip p7zip-full p7zip-rar lzma lzma-dev software-properties-common jhead jpegoptim libjpeg-turbo-progs optipng"
+Spotify
+PopCorn
+Chrome
+Slack
+Teamviewer
 
 Message "Instalando pacotes desenvolvimento"
-
-Install "visual-studio-code yarn teamviewer terminator vi git oracle-java8-installer"
-
-Message "Instalando e configurando NodeJs"
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-
-mkdir ~/.nvm
-nvm install stable
-nvm install 0.12
-nvm use stable
+Node
+Yarn
+VSCode
+Teamviewer
+Install "terminator git oracle-java8-installer"
 
 Message "Instalando de pacotes globais do Node"
 npm i -g react-native-cli browsersync sass

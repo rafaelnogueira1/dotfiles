@@ -8,18 +8,63 @@ Install() {
     sudo apt autoremove
 }
 
-InstallPopCorn() {
+VSCode() {
+    Message "Instalação VSCode"
+    Install "apt-transport-https"
+    Install "code" 
+}
+
+Spotify() {
+    Message "Instalação Spotify"
+    Install "spotify-client"
+}
+
+PopCorn() {
+    Message "Instalação PopCorn Time"
     wget https://get.popcorntime.sh/build/Popcorn-Time-0.3.10-Linux-64.tar.xz -O popcorntime.tar.xz
     sudo mkdir /opt/popcorntime
     sudo tar Jxf popcorntime.tar.xz -C /opt/popcorntime/
     sudo ln -sf /opt/popcorntime/Popcorn-Time /usr/bin/Popcorn-Time
     echo -e '[Desktop Entry]\n Version=1.0\n Name=popcorntime\n Exec=/opt/popcorntime/Popcorn-Time\n Icon=/opt/popcorntime/src/app/images/icon.png\n Type=Application\n Categories=Application' | sudo tee /usr/share/applications/popcorntime.desktop
-    
+}
+
+Chrome() {
+    Message "Instalação Chrome"
+    Install "google-chrome-stable"
+}
+
+Slack() {
+    Message "Instalação Slack"
+    wget -P $HOME/Downloads https://downloads.slack-edge.com/linux_releases/slack-desktop-3.3.8-amd64.deb
+    cd $HOME/Downloads
+    sudo dpkg -i slack-desktop-3.3.8-amd64.deb
+}
+
+Teamviewer() {
+    Message "Instalação TeamViewer"
+    Install "teamviewer"
+}
+
+Node() {
+    Message "Instalando e configurando NVM e NodeJs"
+    mkdir $HOME/.nvm
+    export NVM_DIR="$HOME/.nvm" && (
+    git clone https://github.com/creationix/nvm.git "$NVM_DIR"
+    cd "$NVM_DIR"
+    git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
+    ) && \. "$NVM_DIR/nvm.sh"
+    nvm install stable
+}
+
+Yarn() {
+    Message "Instalando Yarn"
+    Install "yarn"
 }
 
 SystemFiles() {
-    cp -v bin/system-settings/.bashrc bin/system-settings/.gitconfig bin/system-settings/.vimrc $HOME
-    cp -v system-config/popcorn/data $HOME/.config/Popcorn-Time/Default
-    cp -v system-config/vscode/User $HOME/.config/Code
-    cp -v system-config/terminator/config $HOME/.config/terminator
+    mkdir -v $HOME/.config/terminator $HOME/.config/Popcorn-Time/Default/ $HOME/.config/Code/User/
+    cp -v bin/system-config/.bashrc bin/system-config/.gitconfig $HOME
+    cp -Rv bin/system-config/popcorn/data $HOME/.config/Popcorn-Time/Default/
+    cp -Rv bin/system-config/vscode/User $HOME/.config/Code/User/
+    cp -v bin/system-config/terminator/config $HOME/.config/terminator/
 }
