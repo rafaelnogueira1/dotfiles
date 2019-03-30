@@ -38,7 +38,7 @@ Slack() {
     Message "Instalação Slack"
     wget $HOME/Downloads https://downloads.slack-edge.com/linux_releases/slack-desktop-3.3.8-amd64.deb -O slack-desktop.deb
     sudo dpkg -i slack-desktop-3.3.8-amd64.deb
-    apt --fix-broken install
+    sudo apt --fix-broken install
     rm -rf slack-desktop.deb
 }
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 . bin/loadall
-<<COMENTARIO
+
 # Adicionando PPAs
 Message "Adicionando PPAs"
 Install "wget curl"
@@ -27,6 +27,6 @@ Install "terminator git oracle-java8-installer"
 
 Message "Instalando de pacotes globais do Node"
 npm i -g react-native-cli browsersync sass
-COMENTARIO
+
 Message "Copiando arquivos de sistema"
 SystemFiles
