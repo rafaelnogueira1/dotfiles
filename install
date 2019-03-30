@@ -8,10 +8,9 @@ Install "wget curl"
 . bin/system-config/repositories
 
 Message "Atualizando sistema"
+Update
 
-#Update
 Message "Instalando pacotes essenciais"
-
 Install "vlc steam transmission build-essential ubuntu-restricted-extras libdvd-pkg libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext p7zip p7zip-full p7zip-rar lzma lzma-dev software-properties-common jhead jpegoptim libjpeg-turbo-progs optipng"
 Spotify
 PopCorn

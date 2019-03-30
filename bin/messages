@@ -1,7 +1,7 @@
 #!/bin/bash
 
 Message ( ) {
-    printf "\n${RED}$1${NC}\n------- \n"
+    printf "\n${BLUE}$1${NC}\n------- \n"
 }
 
 Alert ( ) {
