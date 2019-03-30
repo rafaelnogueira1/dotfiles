@@ -37,9 +37,17 @@ Chrome() {
 Slack() {
     Message "Instalação Slack"
     wget $HOME/Downloads https://downloads.slack-edge.com/linux_releases/slack-desktop-3.3.8-amd64.deb -O slack-desktop.deb
-    sudo dpkg -i slack-desktop-3.3.8-amd64.deb
+    sudo dpkg -i slack-desktop.deb
     sudo apt --fix-broken install
     rm -rf slack-desktop.deb
+}
+
+Discord() {
+    Message "Instalação Discord"
+    wget "https://discordapp.com/api/download?platform=linux&format=deb" -O discord.deb
+    sudo dpkg -i discord.deb
+    sudo apt-get install -f
+    rm -rf discord.deb
 }
 
 Teamviewer() {

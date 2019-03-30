@@ -26,3 +26,24 @@ Execute o script
 ```
 sh install
 ```
+
+## Pacotes instalados
+
+* Google Chrome
+* Slack
+* Discord
+* Teamviewer
+* Visual Studio Code
+* Android Studio
+* Terminator
+* Java
+* Node
+* Yarn
+* Git
+* React Native Cli
+* Browsersync
+* Transmission
+* VLC
+* Steam
+* Spotify
+* Build Essentials
