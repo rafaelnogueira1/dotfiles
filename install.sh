@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. /bin/loadAll
+. bin/loadall
 
 ## Adicionando PPAs
 
