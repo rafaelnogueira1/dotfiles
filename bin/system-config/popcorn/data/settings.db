@@ -1,0 +1,24 @@
+{"key":"totalUploaded","value":784200822,"_id":"6VX7qj5OQF65hZcy"}
+{"key":"disclaimerAccepted","value":1,"_id":"8Jkzuh0NwYRVSV3H"}
+{"key":"lastWatchedTime","value":4.245353,"_id":"8OcXHWVH36Ejzu6u"}
+{"key":"arch","value":"x64","_id":"B1cTNX0RTGIlij24"}
+{"key":"playerVolume","value":"1.0","_id":"EZOVTD9GLn4YqAOJ"}
+{"key":"subtitle_size","value":"50px","_id":"HMMzUIPrRSiB0Nzu"}
+{"key":"releaseName","value":"Popcorn is Love","_id":"IQRaworJQIiISyu1"}
+{"key":"subtitle_language","value":"pt-br","_id":"MG9IrpZXlTOVlHFi"}
+{"key":"os","value":"linux","_id":"OXngE8l929CVXeCt"}
+{"key":"shows_default_quality","value":"720p","_id":"Z5WZdkZe7pi7hvfh"}
+{"key":"ipAddress","value":"192.168.0.15","_id":"bgoNiHixPbLaVELT"}
+{"key":"subtitle_color","value":"#ffff00","_id":"dxSRrY3UJPUt7yKS"}
+{"key":"language","value":"pt-br","_id":"f2f7Cufmmo2mMfPX"}
+{"key":"version","value":"0.3.10","_id":"kcuFAlzCIEryPCeH"}
+{"key":"lastWatchedTitle","value":"This Is Us - Temporada 3, Episódio 16 - Don't Take My Sunshine Away","_id":"mmQtOGFW1GefFxU3"}
+{"key":"showAdvancedSettings","value":true,"_id":"nmCK2nTxA0jGueiq"}
+{"key":"totalDownloaded","value":4340815991,"_id":"xshUpiFimQPutki5"}
+{"key":"filters","value":{"shows":{"sorter":"trending","genre":"","order":-1},"movies":{"sorter":"trending","genre":"","order":-1}},"_id":"zYmQxZZHXknlfefl"}
+{"$$indexCreated":{"fieldName":"key","unique":true,"sparse":false}}
+{"key":"version","value":"0.3.10","_id":"kcuFAlzCIEryPCeH"}
+{"key":"releaseName","value":"Popcorn is Love","_id":"IQRaworJQIiISyu1"}
+{"key":"arch","value":"x64","_id":"B1cTNX0RTGIlij24"}
+{"key":"os","value":"linux","_id":"OXngE8l929CVXeCt"}
+{"key":"ipAddress","value":"192.168.0.15","_id":"bgoNiHixPbLaVELT"}
