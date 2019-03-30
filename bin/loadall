@@ -1,2 +1,2 @@
-. functions
-. messages
+. bin/functions
+. bin/messages

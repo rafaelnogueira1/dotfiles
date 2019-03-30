@@ -1,4 +1,4 @@
-#Dot files
+# Dot files
 
 Neste repositório estão algumas configurações padrões e instalação de pacotes que utilizo no meu SO.
 
@@ -9,17 +9,17 @@ Testado e utilizado com Ubuntu Linux.
 ## Instalação
 Download do repositório
 ```
-wget https://github.com/rafaelnogueira1/dotfiles.git
+wget https://github.com/rafaelnogueira1/dotfiles/archive/master.zip
 ```
 
 Extraia os arquivos
 ```
-unzip dotfiles.git
+unzip master.zip
 ```
 
 Acesse pasta dotfile
 ```
-cd dotfile-dotfiles.git
+cd dotfile-master
 ```
 
 Execute o script
