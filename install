@@ -12,7 +12,7 @@ Update
 
 Message "Instalando pacotes essenciais"
 Install "vlc steam transmission build-essential gnome-tweak-tool ubuntu-restricted-extras p7zip p7zip-full p7zip-rar lzma lzma-dev jpegoptim libjpeg-turbo-progs optipng"
-Spotify
+##Spotify
 PopCorn
 Chrome
 Slack
@@ -23,10 +23,10 @@ Node
 Yarn
 VSCode
 Teamviewer
-Install "terminator git oracle-java8-installer android-studio"
+Install "git oracle-java8-installer android-studio"
 
 Message "Instalando de pacotes globais do Node"
-npm i -g react-native-cli browsersync sass
+npm i -g react-native-cli sass
 
 Message "Copiando arquivos de sistema"
 SystemFiles

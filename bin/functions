@@ -72,9 +72,7 @@ Yarn() {
 }
 
 SystemFiles() {
-    mkdir -pv $HOME/.config/terminator $HOME/.config/Popcorn-Time/Default/ $HOME/.config/Code/User/
-    cp -v bin/system-config/.bashrc bin/system-config/.gitconfig $HOME
+    mkdir -pv $HOME/.config/terminator $HOME/.config/Popcorn-Time/Default/ 
+    cp -v bin/system-config/.bashrc bin/system-config/.zshrc bin/system-config/.gitconfig $HOME
     cp -Rv bin/system-config/popcorn/data $HOME/.config/Popcorn-Time/Default/
-    cp -Rv bin/system-config/vscode/User $HOME/.config/Code/User/
-    cp -v bin/system-config/terminator/config $HOME/.config/terminator/
 }
